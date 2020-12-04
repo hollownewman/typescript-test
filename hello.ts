@@ -77,3 +77,4 @@ class Collection{
 
 let Stringss = new Collection();
 Stringss.add('hello');
+console.log("ccc");
