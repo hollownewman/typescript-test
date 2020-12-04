@@ -77,4 +77,10 @@ class Collection{
 
 let Stringss = new Collection();
 Stringss.add('hello');
-console.log("ccc");
+
+//用接口表示数组
+interface NumberAray{
+    [index:number]:number;
+}
+
+let fib:NumberAray=[1,1,2,3,5]
