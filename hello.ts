@@ -84,3 +84,4 @@ interface NumberAray{
 }
 
 let fib:NumberAray=[1,1,2,3,5]
+console.log(fib);
