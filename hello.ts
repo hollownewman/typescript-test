@@ -84,5 +84,39 @@ interface NumberAray{
 }
 
 let fib:NumberAray=[1,1,2,3,5]
-console.log(fib);
-console.log(aaa);
+
+//函数的类型
+function sum(x:number,y:number):number{
+    return x+y
+}
+sum(1,2)
+
+let mySum = function(x:number,y:number):number{
+    return x*y
+}
+
+//可选参数
+function buildName(firstName:string,lastName?:string){
+    //可选参数后面不允许再出现必需参数了
+    if(lastName){
+        return firstName+''+lastName;
+    }else{
+        return firstName
+    }
+}
+
+let tomcat = buildName('liu','zhang');
+console.log(tomcat);
+
+let tomcat1 = buildName("li");
+console.log(tomcat1);
+
+//参数默认值
+//TypeScript 会将添加了默认值的参数识别为可选参数：
+function buildName1(firstName:string,lastName:string='cat'){
+    return firstName+""+lastName;
+}
+let tomcat2 = buildName1('Tom','cat');
+console.log(tomcat2);
+let tom1 = buildName1('Tom');
+console.log(tom1)
